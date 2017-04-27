@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+	<title>Adam Hannigan</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div id="carousel-container">
+		<img src="./images/close.png" id="carousel-close" onclick="carousel.close()"/>
+		<div id="carousel-left" onclick="carousel.left()">
+			<img src="./images/left.png"/>
+		</div>
+		<div id="carousel-right" onclick="carousel.right()">
+			<img src="./images/right.png"/>
+		</div>
+		<div id="carousel-image-container">
+			<img src="./images/dirty-home.png" id="project-image-dirty-worker-1" class="project-carousel-image"/>
+			<img src="./images/dirty-create-mobile.jpg" id="project-image-dirty-worker-2" class="project-carousel-image"/>
+			<img src="./images/dirty-jobs.png" id="project-image-dirty-worker-3" class="project-carousel-image"/>
+			<img src="./images/dirty-login.png" id="project-image-dirty-worker-4" class="project-carousel-image"/>
+		</div>
+	</div>
+	<div id="carousel-overlay"></div>
+	<div id="container">
+	    <div id="header">
+		   	<nav>
+				<img src="images/Grayscale_Logo.png"/>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+	   </div>
+	   <div id="project-content">
+	   		<div class="project-holder">
+	   			<div class="project-inner">
+	   				<div class="project-details">
+	   					<h4>Smashy Snow (Unity - Android Deployment)</h4>
+	   					<p>Fun <span class="bold">arcade</span> styled game released in 2016 to gain experience in releasing a complete game. Designed in Photoshop and created using Unity 2D's features. Uses a custom physics character controller to give a fine tuned and unique user experience. Limited actions/mechanics of the game to appeal to younger users.
+	   					<p>View on <a href="https://play.google.com/store/apps/details?id=com.DirtyWorker.SmashySnow&hl=en">Play Store</a></p>
+	   				</div>
+	   				<div class="project-image-holder">
+	   					<div class="project-image-container move-left">
+	   						<img class="project-image" src="./images/smashy-snow.jpg"></img>
+	   					</div>
+	   				</div>
+	   				
+	   			</div>
+	   		</div>
+	   		<div class="project-holder">
+	   			<div class="project-inner">
+	   				<div class="project-image-holder project-desktop-view">
+	   					<div class="project-image-container">
+	   						<img id="timers-project-image" src="./images/timers-icon.png"></img>
+	   					</div>
+	   				</div>
+	   				<div class="project-details">
+	   					<h4>Timers For Synergy (Android)</h4>
+	   					<p>Mobile Applications Project at University of Technology Sydney. Involved design documents, material design implementation, functional and user testing. Helped Synergy users create, edit and delete timers on the fly. Used multiple 3rd party libraries and external API interaction and more. Interacted heavily with the Synergy REST API for CRUD operations and Oauth2 authentication.
+	   					<p>View on <a href="https://play.google.com/store/apps/details?id=com.id12006957.totalsynergytimers&hl=en">Play Store</a></p>
+	   				</div>
+	   				<div class="project-image-holder project-mobile-view">
+	   					<div class="project-image-container">
+	   						<img id="timers-project-image" src="./images/timers-icon.png"></img>
+	   					</div>
+	   				</div>
+	   			</div>
+	   		</div>
+	   		<div class="project-holder">
+	   			<div class="project-inner">
+	   				<div class="project-details">
+	   					<h4>Dirty Worker (Web MEAN stack)</h4>
+	   					<p>Personal 4 month project to demonstrate Web development skills. Provided a crowd-sourcing alternative for teenagers to find local chores in the area. Written in Node, Angular 1, Express and MongoDB. Deployed on DigitalOcean and uses LetsEncrypt for HTTPS security. Mapped Australian POST database with Google Maps to get realtime geographical locations. Encrypted storage of data, ability to login with Facebook Oauth, NodeMailer for email capacity and much more! Fully responsive design.</p>
+	   					<p><a onclick="carousel.open('dirty-worker', 4)">View images</a></p>
+	   				</div>
+	   				<div class="project-image-holder">
+	   					<div class="project-image-container move-left">
+	   						<img class="project-image" src="./images/dirty-home.png"></img>
+	   					</div>
+	   				</div>
+	   				
+	   			</div>
+	   		</div>
+	   </div>
+	   <div id="footer">
+		   	<ul>
+				<li><a href="/"><img src="images/github.png"/></a></li>
+				<li><a href="/"><img src="images/linked-in.png"/></a></li>
+				<li><a href="/"><img src="images/twitter.png"/></a></li>
+			</ul>
+	   </div>
+	</div>
+
+	<script src="./carousel.js"></script>
+	<script>
+		var carousel = new CarouselWidget();
+	</script>
+</body>
+</html>
