@@ -104,6 +104,7 @@ nav{
 nav ul{
 	padding-top:58px;
 	margin-top:0;
+	padding-left:0;
 }
 
 nav li{
@@ -124,6 +125,7 @@ nav li:hover{
 		width: 25%;
     	float: left;
     	padding:0;
+    	text-align:center;
 	}
 
 	nav img{
@@ -257,7 +259,14 @@ p{
 /*PROJECTS*/
 
 #project-content{
-	padding: 50px 0px 150px;
+	padding: 0px 0px 150px;
+}
+
+@media screen and (min-width: 520px){
+
+	#project-content{
+		padding-top:50px;
+	}
 }
 .project-holder{
 	width:100%;
@@ -275,7 +284,7 @@ p{
 
 @media screen and (max-width: 768px) {
 	.project-holder{
-		height:400px;
+		height:450px;
 	}
 
 	.project-image-container{
